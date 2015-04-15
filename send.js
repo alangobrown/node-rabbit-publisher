@@ -25,7 +25,7 @@ function connectAndSend(msg){
 
 
     // FOR DOCKER WHEN A LINK IS CALLED rabbit
-  amqp.connect('rabbit').then(function(conn) {
+  amqp.connect('amqp://' + 'rabbit' + ':' + process.env.RABBIT_PORT_5672_TCP_PORT).then(function(conn) {
 
 
     return when(conn.createChannel().then(function(ch) {
