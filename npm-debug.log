@@ -1,0 +1,351 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'sleep' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 silly cache add args [ 'sleep', null ]
+6 verbose cache add spec sleep
+7 silly cache add parsed spec { raw: 'sleep',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'sleep',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed sleep@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'sleep', range: '*', hasData: false }
+12 silly mapToRegistry name sleep
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/sleep
+16 verbose addNameRange registry:https://registry.npmjs.org/sleep not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/sleep
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 1:34:19 PM
+20 verbose request id 3cf17db44489a788
+21 verbose etag "8CHWCM8WTGDTT20DRUI12JGGO"
+22 http request GET https://registry.npmjs.org/sleep
+23 http 304 https://registry.npmjs.org/sleep
+24 silly get cb [ 304,
+24 silly get   { date: 'Wed, 15 Apr 2015 12:34:19 GMT',
+24 silly get     server: 'Apache',
+24 silly get     via: '1.1 varnish',
+24 silly get     'last-modified': 'Wed, 15 Apr 2015 12:34:19 GMT',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"8CHWCM8WTGDTT20DRUI12JGGO"',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-fra1236-FRA',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1429101259.772909,VS0,VE104',
+24 silly get     vary: 'Accept',
+24 silly get     'content-length': '0',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 verbose etag https://registry.npmjs.org/sleep from cache
+26 verbose get saving sleep to C:\Users\abrown\AppData\Roaming\npm-cache\registry.npmjs.org\sleep\.cache.json
+27 silly addNameRange number 2 { name: 'sleep', range: '*', hasData: true }
+28 silly addNameRange versions [ 'sleep',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.1.4',
+28 silly addNameRange     '1.1.5',
+28 silly addNameRange     '1.1.6',
+28 silly addNameRange     '1.1.7',
+28 silly addNameRange     '1.1.8',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '2.0.0' ] ]
+29 verbose addNamed sleep@2.0.0
+30 silly addNamed semver.valid 2.0.0
+31 silly addNamed semver.validRange 2.0.0
+32 silly cache afterAdd sleep@2.0.0
+33 verbose afterAdd C:\Users\abrown\AppData\Roaming\npm-cache\sleep\2.0.0\package\package.json not in flight; writing
+34 verbose afterAdd C:\Users\abrown\AppData\Roaming\npm-cache\sleep\2.0.0\package\package.json written
+35 silly install resolved [ { name: 'sleep',
+35 silly install resolved     version: '2.0.0',
+35 silly install resolved     main: 'index.js',
+35 silly install resolved     description: 'Add sleep() and usleep() to nodejs',
+35 silly install resolved     homepage: 'http://github.com/ErikDubbelboer/node-sleep',
+35 silly install resolved     author: { name: 'Erik Dubbelboer', email: 'erik@dubbelboer.com' },
+35 silly install resolved     engines: { node: '>=0.4.0' },
+35 silly install resolved     keywords: [ 'sleep', 'usleep' ],
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'https://github.com/ErikDubbelboer/node-sleep.git' },
+35 silly install resolved     dependencies: { nan: '*' },
+35 silly install resolved     gypfile: true,
+35 silly install resolved     scripts: { install: 'node-gyp rebuild' },
+35 silly install resolved     gitHead: '3c850e05250d3ad72499fb0cefc4be13e9ce24d2',
+35 silly install resolved     bugs: { url: 'https://github.com/ErikDubbelboer/node-sleep/issues' },
+35 silly install resolved     _id: 'sleep@2.0.0',
+35 silly install resolved     _shasum: '96d8ef97970ecad464b146ea5e86dd5d6ceb65bc',
+35 silly install resolved     _from: 'sleep@*',
+35 silly install resolved     _npmVersion: '1.4.28',
+35 silly install resolved     _npmUser: { name: 'erikdubbelboer', email: 'erik@dubbelboer.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '96d8ef97970ecad464b146ea5e86dd5d6ceb65bc',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/sleep/-/sleep-2.0.0.tgz' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/sleep/-/sleep-2.0.0.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install sleep@2.0.0 into C:\innovation\docker-brown-box\node\send-to-rabbit
+37 info installOne sleep@2.0.0
+38 verbose installOne of sleep to C:\innovation\docker-brown-box\node\send-to-rabbit not in flight; installing
+39 verbose lock using C:\Users\abrown\AppData\Roaming\npm-cache\_locks\sleep-c1dbb36e103358b2.lock for C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+40 silly install write writing sleep 2.0.0 to C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+41 silly cache addNamed cb sleep@2.0.0
+42 verbose unbuild node_modules\sleep
+43 verbose gentlyRm vacuuming C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+44 verbose tar unpack C:\Users\abrown\AppData\Roaming\npm-cache\sleep\2.0.0\package.tgz
+45 verbose tar unpacking to C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+46 verbose gentlyRm vacuuming C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+47 silly gunzTarPerm modes [ '777', '666' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+50 silly gunzTarPerm extractEntry .npmignore
+51 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+54 silly gunzTarPerm extractEntry test.js
+55 silly gunzTarPerm modified mode [ 'test.js', 436, 438 ]
+56 silly gunzTarPerm extractEntry index.js
+57 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+58 silly gunzTarPerm extractEntry LICENSE.txt
+59 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 438 ]
+60 silly gunzTarPerm extractEntry sleep.cc
+61 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 438 ]
+62 silly gunzTarPerm extractEntry binding.gyp
+63 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 438 ]
+64 info preinstall sleep@2.0.0
+65 silly prepareForInstallMany adding nan@* from sleep dependencies
+66 silly cache add args [ 'nan@*', null ]
+67 verbose cache add spec nan@*
+68 silly cache add parsed spec { raw: 'nan@*',
+68 silly cache add   scope: null,
+68 silly cache add   name: 'nan',
+68 silly cache add   rawSpec: '*',
+68 silly cache add   spec: '*',
+68 silly cache add   type: 'range' }
+69 verbose addNamed nan@*
+70 silly addNamed semver.valid null
+71 silly addNamed semver.validRange *
+72 silly addNameRange { name: 'nan', range: '*', hasData: false }
+73 silly mapToRegistry name nan
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/nan
+77 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+78 verbose request uri https://registry.npmjs.org/nan
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 1:34:20 PM
+81 verbose etag "2RVNOBUBIPFCFHXKKPTSTKGB8"
+82 http request GET https://registry.npmjs.org/nan
+83 http 304 https://registry.npmjs.org/nan
+84 silly get cb [ 304,
+84 silly get   { date: 'Wed, 15 Apr 2015 12:34:21 GMT',
+84 silly get     server: 'Apache',
+84 silly get     via: '1.1 varnish',
+84 silly get     'last-modified': 'Wed, 15 Apr 2015 12:34:21 GMT',
+84 silly get     'cache-control': 'max-age=60',
+84 silly get     etag: '"2RVNOBUBIPFCFHXKKPTSTKGB8"',
+84 silly get     age: '0',
+84 silly get     'x-served-by': 'cache-ams4147-AMS',
+84 silly get     'x-cache': 'HIT',
+84 silly get     'x-cache-hits': '1',
+84 silly get     'x-timer': 'S1429101261.117914,VS0,VE378',
+84 silly get     vary: 'Accept',
+84 silly get     'content-length': '0',
+84 silly get     'keep-alive': 'timeout=10, max=50',
+84 silly get     connection: 'Keep-Alive' } ]
+85 verbose etag https://registry.npmjs.org/nan from cache
+86 verbose get saving nan to C:\Users\abrown\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+87 silly addNameRange number 2 { name: 'nan', range: '*', hasData: true }
+88 silly addNameRange versions [ 'nan',
+88 silly addNameRange   [ '0.3.0-wip',
+88 silly addNameRange     '0.3.0-wip2',
+88 silly addNameRange     '0.3.0',
+88 silly addNameRange     '0.3.1',
+88 silly addNameRange     '0.3.2',
+88 silly addNameRange     '0.4.0',
+88 silly addNameRange     '0.4.1',
+88 silly addNameRange     '0.4.2',
+88 silly addNameRange     '0.4.3',
+88 silly addNameRange     '0.4.4',
+88 silly addNameRange     '0.5.0',
+88 silly addNameRange     '0.5.1',
+88 silly addNameRange     '0.5.2',
+88 silly addNameRange     '0.6.0',
+88 silly addNameRange     '0.7.0',
+88 silly addNameRange     '0.7.1',
+88 silly addNameRange     '0.8.0',
+88 silly addNameRange     '1.0.0',
+88 silly addNameRange     '1.1.0',
+88 silly addNameRange     '1.1.1',
+88 silly addNameRange     '1.1.2',
+88 silly addNameRange     '1.2.0',
+88 silly addNameRange     '1.3.0',
+88 silly addNameRange     '1.4.0',
+88 silly addNameRange     '1.4.1',
+88 silly addNameRange     '1.5.0',
+88 silly addNameRange     '1.4.2',
+88 silly addNameRange     '1.4.3',
+88 silly addNameRange     '1.5.1',
+88 silly addNameRange     '1.5.2',
+88 silly addNameRange     '1.6.0',
+88 silly addNameRange     '1.5.3',
+88 silly addNameRange     '1.6.1',
+88 silly addNameRange     '1.6.2',
+88 silly addNameRange     '1.7.0' ] ]
+89 verbose addNamed nan@1.7.0
+90 silly addNamed semver.valid 1.7.0
+91 silly addNamed semver.validRange 1.7.0
+92 silly cache afterAdd nan@1.7.0
+93 verbose afterAdd C:\Users\abrown\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json not in flight; writing
+94 verbose afterAdd C:\Users\abrown\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json written
+95 silly install resolved [ { name: 'nan',
+95 silly install resolved     version: '1.7.0',
+95 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+95 silly install resolved     main: 'include_dirs.js',
+95 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+95 silly install resolved     scripts:
+95 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+95 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+95 silly install resolved     contributors:
+95 silly install resolved      [ [Object],
+95 silly install resolved        [Object],
+95 silly install resolved        [Object],
+95 silly install resolved        [Object],
+95 silly install resolved        [Object],
+95 silly install resolved        [Object],
+95 silly install resolved        [Object] ],
+95 silly install resolved     devDependencies:
+95 silly install resolved      { bindings: '~1.2.1',
+95 silly install resolved        'node-gyp': '~1.0.2',
+95 silly install resolved        pangyp: '~2.0.1',
+95 silly install resolved        tap: '~0.5.0',
+95 silly install resolved        xtend: '~4.0.0' },
+95 silly install resolved     license: 'MIT',
+95 silly install resolved     gitHead: '550efb5dde5cb6bf79db87ab48dce850e56e971a',
+95 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+95 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+95 silly install resolved     _id: 'nan@1.7.0',
+95 silly install resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+95 silly install resolved     _from: 'nan@*',
+95 silly install resolved     _npmVersion: '2.5.1',
+95 silly install resolved     _nodeVersion: '0.12.0',
+95 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+95 silly install resolved     maintainers: [ [Object], [Object] ],
+95 silly install resolved     dist:
+95 silly install resolved      { shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+95 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.7.0.tgz' },
+95 silly install resolved     directories: {},
+95 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
+95 silly install resolved     readme: 'ERROR: No README data found!' } ]
+96 info install nan@1.7.0 into C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+97 info installOne nan@1.7.0
+98 verbose installOne of nan to C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep not in flight; installing
+99 verbose lock using C:\Users\abrown\AppData\Roaming\npm-cache\_locks\nan-5ca5b9dbe7ba5db2.lock for C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+100 silly install write writing nan 1.7.0 to C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+101 silly cache addNamed cb nan@1.7.0
+102 verbose unbuild node_modules\sleep\node_modules\nan
+103 verbose gentlyRm vacuuming C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+104 verbose tar unpack C:\Users\abrown\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+105 verbose tar unpacking to C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+106 verbose gentlyRm vacuuming C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+107 silly gunzTarPerm modes [ '777', '666' ]
+108 silly gunzTarPerm extractEntry package.json
+109 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+110 silly gunzTarPerm extractEntry include_dirs.js
+111 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+112 silly gunzTarPerm extractEntry LICENSE.md
+113 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+114 silly gunzTarPerm extractEntry .dntrc
+115 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+116 silly gunzTarPerm extractEntry appveyor.yml
+117 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+118 silly gunzTarPerm extractEntry nan.h
+119 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+120 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+121 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+122 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+123 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+124 silly gunzTarPerm extractEntry nan_new.h
+125 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+126 silly gunzTarPerm extractEntry nan_string_bytes.h
+127 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+128 silly gunzTarPerm extractEntry CHANGELOG.md
+129 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+130 info preinstall nan@1.7.0
+131 silly install resolved []
+132 verbose about to build C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+133 info build C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+134 verbose linkStuff [ false,
+134 verbose linkStuff   false,
+134 verbose linkStuff   false,
+134 verbose linkStuff   'C:\\innovation\\docker-brown-box\\node\\send-to-rabbit\\node_modules\\sleep\\node_modules' ]
+135 info linkStuff nan@1.7.0
+136 verbose linkBins nan@1.7.0
+137 verbose linkMans nan@1.7.0
+138 verbose rebuildBundles nan@1.7.0
+139 info install nan@1.7.0
+140 info postinstall nan@1.7.0
+141 verbose unlock done using C:\Users\abrown\AppData\Roaming\npm-cache\_locks\nan-5ca5b9dbe7ba5db2.lock for C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep\node_modules\nan
+142 verbose about to build C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+143 info build C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+144 verbose linkStuff [ false,
+144 verbose linkStuff   false,
+144 verbose linkStuff   false,
+144 verbose linkStuff   'C:\\innovation\\docker-brown-box\\node\\send-to-rabbit\\node_modules' ]
+145 info linkStuff sleep@2.0.0
+146 verbose linkBins sleep@2.0.0
+147 verbose linkMans sleep@2.0.0
+148 verbose rebuildBundles sleep@2.0.0
+149 verbose rebuildBundles [ 'nan' ]
+150 info install sleep@2.0.0
+151 verbose unsafe-perm in lifecycle true
+152 info sleep@2.0.0 Failed to exec install script
+153 verbose unlock done using C:\Users\abrown\AppData\Roaming\npm-cache\_locks\sleep-c1dbb36e103358b2.lock for C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+154 verbose stack Error: sleep@2.0.0 install: `node-gyp rebuild`
+154 verbose stack Exit status 1
+154 verbose stack     at EventEmitter.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+154 verbose stack     at EventEmitter.emit (events.js:110:17)
+154 verbose stack     at ChildProcess.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+154 verbose stack     at ChildProcess.emit (events.js:110:17)
+154 verbose stack     at maybeClose (child_process.js:1008:16)
+154 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+155 verbose pkgid sleep@2.0.0
+156 verbose cwd C:\innovation\docker-brown-box\node\send-to-rabbit
+157 error Windows_NT 6.3.9600
+158 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "sleep"
+159 error node v0.12.0
+160 error npm  v2.5.1
+161 error code ELIFECYCLE
+162 error sleep@2.0.0 install: `node-gyp rebuild`
+162 error Exit status 1
+163 error Failed at the sleep@2.0.0 install script 'node-gyp rebuild'.
+163 error This is most likely a problem with the sleep package,
+163 error not with npm itself.
+163 error Tell the author that this fails on your system:
+163 error     node-gyp rebuild
+163 error You can get their info via:
+163 error     npm owner ls sleep
+163 error There is likely additional logging output above.
+164 verbose exit [ 1, true ]
+165 verbose unbuild node_modules\sleep
+166 info preuninstall sleep@2.0.0
+167 info uninstall sleep@2.0.0
+168 verbose unbuild rmStuff sleep@2.0.0 from C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules
+169 info postuninstall sleep@2.0.0
+170 verbose gentlyRm vacuuming C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+171 silly gentlyRm purging C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules\sleep
+172 silly gentlyRm quitting because other entries in C:\innovation\docker-brown-box\node\send-to-rabbit\node_modules

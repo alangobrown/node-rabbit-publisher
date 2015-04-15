@@ -8,6 +8,15 @@ console.log('About to send message')
 var amqp = require('amqplib');
 var when = require('when');
 
+function sleep(time, callback) {
+    var stop = new Date().getTime();
+    while(new Date().getTime() < stop + time) {
+        ;
+    }
+    callback();
+}
+
+
 amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
   return when(conn.createChannel().then(function(ch) {
     var q = 'hello';
@@ -17,9 +26,14 @@ amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
     
     return ok.then(function(_qok) {
 
-      for (var i = 0; i < 2; i++) {
-      ch.sendToQueue(q, new Buffer(msg + ' ' +i));
-      console.log(" [x] Sent '%s'", msg);
+      for (var i = 0; i < 5; i++) {
+        sleep(10000, function(){
+
+          ch.sendToQueue(q, new Buffer(msg + ' ' +i));
+          console.log(" [x] Sent '%s'", msg);
+
+        })
+
       }
       return ch.close();
     });
