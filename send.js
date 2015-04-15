@@ -19,7 +19,15 @@ function sleep(time, callback) {
 
 function connectAndSend(msg){
 
-  amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
+
+  //For testing, connecting to a real IP address
+  //amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
+
+
+    // FOR DOCKER WHEN A LINK IS CALLED rabbit
+  amqp.connect('rabbit').then(function(conn) {
+
+
     return when(conn.createChannel().then(function(ch) {
       var q = 'hello';
       //var msg = 'Hello World!';
