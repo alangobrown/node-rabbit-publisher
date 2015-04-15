@@ -17,25 +17,31 @@ function sleep(time, callback) {
 }
 
 
-amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
-  return when(conn.createChannel().then(function(ch) {
-    var q = 'hello';
-    var msg = 'Hello World!';
+function connectAndSend(msg){
 
-    var ok = ch.assertQueue(q, {durable: false});
-    
-    return ok.then(function(_qok) {
+  amqp.connect('amqp://guest:guest@46.101.46.152:5672').then(function(conn) {
+    return when(conn.createChannel().then(function(ch) {
+      var q = 'hello';
+      //var msg = 'Hello World!';
 
-      for (var i = 0; i < 5; i++) {
-        sleep(10000, function(){
+      var ok = ch.assertQueue(q, {durable: false});
+      
+      return ok.then(function(_qok) {
 
-          ch.sendToQueue(q, new Buffer(msg + ' ' +i));
-          console.log(" [x] Sent '%s'", msg);
+            ch.sendToQueue(q, new Buffer(msg));
+            console.log(" [x] Sent '%s'", msg);
 
-        })
+        
+        return ch.close();
+      });
+    })).ensure(function() { conn.close(); });;
+  }).then(null, console.warn);
 
-      }
-      return ch.close();
-    });
-  })).ensure(function() { conn.close(); });;
-}).then(null, console.warn);
+  
+}
+
+
+    connectAndSend("Hello world!");
+    connectAndSend("Hello world!");
+    connectAndSend("Hello world!");
+    connectAndSend("Hello world!");
